@@ -23,4 +23,11 @@ elsif
 end
 end
 
+
+class TriangleError < StandardError
+
+def message
+  puts "Yo, man, that triangle isn't legal."
+end
+
 end
