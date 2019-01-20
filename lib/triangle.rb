@@ -13,7 +13,7 @@ end
 
 
 def kind
-  if @l1 <1 || @l2 <1 || @l3 <1
+  if @l1 < 1 || @l2 < 1 || @l3 < 1
  begin
  raise TriangleError
  rescue TriangleError => error
