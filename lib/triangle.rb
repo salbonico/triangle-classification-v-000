@@ -13,7 +13,7 @@ end
 
 
 def kind
-  if @l1 <= 0 || @l2 <= 0 || @l3 <= 0
+  if @l1 == 0 && @l2 == 0 && @l3 == 0
  begin
  raise TriangleError
  rescue TriangleError => error
@@ -23,13 +23,14 @@ end
 
 if @l2 == @l1 && @l3 == @l1
   return :equilateral
-elsif
+  elsif
    @l2 != @l1 && @l3 != @l1 && @l2 != @l3
     return :scalene
   else
     return :isosceles
 end
 end
+
 
 class TriangleError < StandardError
 
