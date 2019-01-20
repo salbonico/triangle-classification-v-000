@@ -15,7 +15,7 @@ end
 def kind
 if @l2 == @l1 && @l3 == @l1
   return :equilateral
-
+end
 end
 
 end
