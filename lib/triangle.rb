@@ -18,7 +18,7 @@ def kind
  rescue TriangleError => error
 puts error.message
 end
-
+end
 
 if @l2 == @l1 && @l3 == @l1
   return :equilateral
