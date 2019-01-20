@@ -16,7 +16,7 @@ def kind
 if @l2 == @l1 && @l3 == @l1
   return :equilateral
 elsif
-  if @l2 != @l1 && @l3 != @l1 && @l2 != @l3
+   @l2 != @l1 && @l3 != @l1 && @l2 != @l3
     return :scalene
   else
     return :isosceles
