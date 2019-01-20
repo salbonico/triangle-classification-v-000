@@ -14,7 +14,8 @@ end
 
 def kind
   if @l1 <1 || @l2 <1 || @l3 <1
- begin raise TriangleError
+ begin 
+ raise TriangleError
  rescue TriangleError => error
 puts error.message
 end
