@@ -13,6 +13,13 @@ end
 
 
 def kind
+  if @l1 <1 || @l2 <1 || @l3 <1
+ begin raise TriangleError
+ rescue TriangleError => error
+puts error.message
+end
+
+
 if @l2 == @l1 && @l3 == @l1
   return :equilateral
 elsif
@@ -29,5 +36,5 @@ class TriangleError < StandardError
 def message
   puts "Yo, man, that triangle isn't legal."
 end
-
+end
 end
